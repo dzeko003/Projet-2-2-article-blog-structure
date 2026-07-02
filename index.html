@@ -480,7 +480,314 @@
         <section id="commentaires" aria-labelledby="commentaires-titre">
           <h2 id="commentaires-titre">Commentaires <span>(3)</span></h2>
 
-          <ol></ol>
+          <ol>
+            <li id="commentaire-1">
+              <article aria-labelledby="comment1-auteur">
+                <header>
+                  <img
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Avatar de Serge K."
+                    width="48"
+                    height="48"
+                  />
+                  <p>
+                    <strong id="comment1-auteur">Serge K.</strong>
+
+                    <time datetime="2026-06-30T09:15:00+01:00"
+                      >30 juin 2026 à 09h15</time
+                    >
+                  </p>
+                </header>
+                <p>
+                  Merci pour cet article inspirant&nbsp;! Je suis aussi à
+                  Brazzaville et je cherchais justement à me lancer. Quelle
+                  ressource tu recommanderais en priorité pour un vrai débutant?
+                </p>
+                <footer>
+                  <a href="#repondre-form" aria-label="Répondre à Serge K."
+                    >Répondre</a
+                  >
+                </footer>
+              </article>
+            </li>
+
+            <li id="commentaire-2">
+              <article aria-labelledby="comment2-auteur">
+                <header>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Avatar d'Aline M."
+                    width="48"
+                    height="48"
+                  />
+                  <p>
+                    <strong id="comment2-auteur">Aline M.</strong>
+
+                    <time datetime="2026-06-30T11:42:00+01:00"
+                      >30 juin 2026 à 11h42</time
+                    >
+                  </p>
+                </header>
+                <p>
+                  Le projet Ndako a l'air vraiment ambitieux. Est-ce que tu
+                  comptes écrire un article sur l'architecture technique que tu
+                  envisages&nbsp;? Le Mobile Money et les visites 360°
+                  m'intéressent beaucoup.
+                </p>
+                <footer>
+                  <a href="#repondre-form" aria-label="Répondre à Aline M."
+                    >Répondre</a
+                  >
+                </footer>
+              </article>
+            </li>
+            <li id="commentaire-3">
+              <article aria-labelledby="comment3-auteur">
+                <header>
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Avatar de Joël L."
+                    width="48"
+                    height="48"
+                  />
+                  <p>
+                    <strong id="comment3-auteur">Joël L.</strong>
+                    &mdash;
+                    <time datetime="2026-06-30T14:05:00+01:00"
+                      >30 juin 2026 à 14h05</time
+                    >
+                  </p>
+                </header>
+                <p>
+                  Ton point sur la régularité est crucial. J'ai essayé plusieurs
+                  fois de coder en mode «&nbsp;marathon&nbsp;» puis j'arrêtais
+                  tout. Depuis que je fais 45 min par jour, j'avance vraiment.
+                </p>
+                <footer>
+                  <a href="#repondre-form" aria-label="Répondre à Joël L."
+                    >Répondre</a
+                  >
+                </footer>
+              </article>
+              <!-- Reponse -->
+              <ol>
+                <li id="commentaire-3-reponse">
+                  <article aria-labelledby="comment3r-auteur">
+                    <header>
+                      <img
+                        src="./img/KEY_4482.JPG"
+                        alt="Avatar de Berenis, auteur de l'article"
+                        width="48"
+                        height="48"
+                      />
+                      <p>
+                        <strong id="comment3r-auteur">Berenis</strong>
+                        <em>(auteur)</em>
+                        &mdash;
+                        <time datetime="2026-06-30T15:30:00+01:00"
+                          >30 juin 2026 à 15h30</time
+                        >
+                      </p>
+                    </header>
+                    <p>
+                      Exactement, Joël! 45 minutes par jour, c'est 273 heures
+                      sur un an. C'est largement suffisant pour passer de
+                      débutant à junior. Content que ça marche pour toi&nbsp;!
+                    </p>
+                  </article>
+                </li>
+              </ol>
+            </li>
+          </ol>
+
+          <hr />
+
+          <!-- Formulaire -->
+          <section id="repondre-form" aria-labelledby="form-commentaire-titre">
+            <h3 id="form-commentaire-titre">Laisser un commentaire</h3>
+
+            <p>
+              <small>
+                Votre adresse e-mail ne sera pas publiée. Les champs marqués
+                <abbr title="Champ obligatoire">*</abbr> sont obligatoires.
+              </small>
+            </p>
+
+            <form action="#" method="post" novalidate>
+              <!-- Prénom + Nom -->
+              <div>
+                <label for="comment-prenom">
+                  Prénom <abbr title="Champ obligatoire">*</abbr>
+                </label>
+                <br />
+                <input
+                  type="text"
+                  id="comment-prenom"
+                  name="prenom"
+                  placeholder="Votre prénom"
+                  required
+                  aria-required="true"
+                  autocomplete="given-name"
+                />
+              </div>
+
+              <br />
+
+              <div>
+                <label for="comment-nom">
+                  Nom <abbr title="Champ obligatoire">*</abbr>
+                </label>
+                <br />
+                <input
+                  type="text"
+                  id="comment-nom"
+                  name="nom"
+                  placeholder="Votre nom"
+                  required
+                  aria-required="true"
+                  autocomplete="family-name"
+                />
+              </div>
+
+              <br />
+
+              <!-- E-mail -->
+              <div>
+                <label for="comment-email">
+                  Adresse e-mail <abbr title="Champ obligatoire">*</abbr>
+                </label>
+                <br />
+                <input
+                  type="email"
+                  id="comment-email"
+                  name="email"
+                  placeholder="votre@email.com"
+                  required
+                  aria-required="true"
+                  autocomplete="email"
+                />
+                <br />
+                <small>Votre e-mail n'est jamais publié.</small>
+              </div>
+
+              <br />
+
+              <!-- Site web -->
+              <div>
+                <label for="comment-site"
+                  >Site web ou GitHub
+                  <abbr title="Optionnel">(optionnel)</abbr></label
+                >
+                <br />
+                <input
+                  type="url"
+                  id="comment-site"
+                  name="site"
+                  placeholder="https://github.com/votre-pseudo"
+                  autocomplete="url"
+                />
+              </div>
+
+              <br />
+
+              <!-- Note / Évaluation -->
+              <fieldset>
+                <legend>Avez-vous trouvé cet article utile&nbsp;?</legend>
+                <label>
+                  <input type="radio" name="note" value="tres-utile" />
+                  Très utile
+                </label>
+                <label>
+                  <input type="radio" name="note" value="utile" />
+                  Utile
+                </label>
+                <label>
+                  <input type="radio" name="note" value="moyen" />
+                  Moyen
+                </label>
+                <label>
+                  <input type="radio" name="note" value="pas-utile" />
+                  Pas utile
+                </label>
+              </fieldset>
+
+              <br />
+
+              <!-- Commentaire -->
+              <div>
+                <label for="comment-message">
+                  Commentaire <abbr title="Champ obligatoire">*</abbr>
+                </label>
+                <br />
+                <textarea
+                  id="comment-message"
+                  name="message"
+                  rows="6"
+                  cols="60"
+                  placeholder="Partagez votre avis, votre expérience ou posez une question..."
+                  required
+                  aria-required="true"
+                  minlength="10"
+                ></textarea>
+                <br />
+                <small>Minimum 10 caractères.</small>
+              </div>
+
+              <br />
+
+              <!-- Notification par e-mail -->
+              <div>
+                <input
+                  type="checkbox"
+                  id="comment-notif"
+                  name="notification"
+                  value="1"
+                />
+                <label for="comment-notif">
+                  Me notifier par e-mail des réponses à mon commentaire.
+                </label>
+              </div>
+
+              <br />
+
+              <!-- Consentement-->
+              <div>
+                <input
+                  type="checkbox"
+                  id="comment-rgpd"
+                  name="rgpd"
+                  value="1"
+                  required
+                  aria-required="true"
+                />
+                <label for="comment-rgpd">
+                  J'accepte que mes données soient traitées pour publier ce
+                  commentaire.
+                  <abbr title="Champ obligatoire">*</abbr>
+                </label>
+              </div>
+
+              <br />
+
+              <!-- Champ anti-spam honeypot -->
+              <div hidden aria-hidden="true">
+                <label for="comment-honeypot">Ne pas remplir ce champ</label>
+                <input
+                  type="text"
+                  id="comment-honeypot"
+                  name="honeypot"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
+              <!-- Soumission -->
+              <div>
+                <button type="submit">Publier le commentaire</button>
+                <button type="reset">Réinitialiser</button>
+              </div>
+            </form>
+          </section>
         </section>
       </main>
     </div>
