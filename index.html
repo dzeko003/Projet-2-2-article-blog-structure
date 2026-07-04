@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -626,7 +626,6 @@
                   name="prenom"
                   placeholder="Votre prénom"
                   required
-                  aria-required="true"
                   autocomplete="given-name"
                 />
               </div>
@@ -644,7 +643,6 @@
                   name="nom"
                   placeholder="Votre nom"
                   required
-                  aria-required="true"
                   autocomplete="family-name"
                 />
               </div>
@@ -663,7 +661,6 @@
                   name="email"
                   placeholder="votre@email.com"
                   required
-                  aria-required="true"
                   autocomplete="email"
                 />
                 <br />
@@ -726,7 +723,6 @@
                   cols="60"
                   placeholder="Partagez votre avis, votre expérience ou posez une question..."
                   required
-                  aria-required="true"
                   minlength="10"
                 ></textarea>
                 <br />
@@ -758,7 +754,6 @@
                   name="rgpd"
                   value="1"
                   required
-                  aria-required="true"
                 />
                 <label for="comment-rgpd">
                   J'accepte que mes données soient traitées pour publier ce
@@ -770,7 +765,7 @@
               <br />
 
               <!-- Champ anti-spam honeypot -->
-              <div hidden aria-hidden="true">
+              <div hidden>
                 <label for="comment-honeypot">Ne pas remplir ce champ</label>
                 <input
                   type="text"
@@ -910,8 +905,6 @@
                 id="newsletter-email"
                 name="newsletter_email"
                 placeholder="vous@exemple.com"
-                required
-                aria-required="true"
                 autocomplete="email"
               />
             </div>
