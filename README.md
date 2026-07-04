@@ -98,6 +98,16 @@ dans un navigateur web.
 
 ---
 
+## Aperçu
+
+Une version en ligne du projet est disponible via GitHub Pages :
+
+**Démo :**  
+https://dzeko003.github.io/Projet-2-2-article-blog-structure/
+Vous pouvez consulter directement la landing page dans votre navigateur sans avoir à cloner le dépôt.
+
+---
+
 ## Auteur
 
 **Berenis MASSAMBA**
